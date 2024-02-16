@@ -53,6 +53,7 @@ const Newsletter = ({ light }) => {
                 className="p-3 flex w-full rounded-md text-black"
                 type="email"
                 placeholder="Enter your email"
+                required
               />
               <button
                 type="submit"

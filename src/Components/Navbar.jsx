@@ -4,6 +4,7 @@ import { FaSun, FaMoon } from "react-icons/fa";
 import Logo from "../assets/Logo.png";
 import LogoW from "../assets/all_In_On.png";
 
+
 const Navbar = ({ light, theme }) => {
   const [nav, setNav] = useState(true);
 
@@ -20,7 +21,7 @@ const Navbar = ({ light, theme }) => {
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
       {/* desktop */}
-      <img src={Logo} className="h-16 m-4" alt="mozilla logo"/>
+      <img src={Logo} className="h-16 m-4" alt="mozilla logo" />
       <ul className="hidden md:flex">
         <button onClick={theme} className="px-3">
           {light ? (
@@ -83,7 +84,7 @@ const Navbar = ({ light, theme }) => {
           <AiOutlineClose
             size={20}
             color={light ? "#000300" : "white"}
-            className="ease-in-out duration-1000"
+            className="fixed top-4 right-0 m-4 z-10"
           />
         ) : (
           <AiOutlineMenu
@@ -92,33 +93,61 @@ const Navbar = ({ light, theme }) => {
             className="ease-in-out duration-1000"
           />
         )}
-        
       </div>
-      
+
       {/* mobile */}
       <div
         className={
           !nav
-            ? "fixed left-0 top-0 z-50 w-[60%] h-full border-r border-r-gray-900 bg-[#000000] ease-in-out duration-700"
-            : "fixed left-[-100%] top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000000] ease-in-out duration-700"
+            ? "fixed left-0 top-0 z-50 w-[60%] h-full border-r border-r-gray-900 bg-[#000000] ease-in-out duration-700 md:hidden"
+            : "fixed left-[-100%] z-50 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000000] ease-in-out duration-700 md:hidden"
         }
       >
-        <img src={LogoW} className="h-20 m-4" alt="mozilla logo"/>
+        <img src={LogoW} className="h-20 m-4" alt="mozilla logo" />
         <ul className="uppercase p-4">
-          
-          <li className="p-4 border-b border-gray-100 hover:text-orange-300 hover:cursor-pointer" onClick={() => { scrollToSection("hero"); handleNav(); }}>
+          <li
+            className="p-4 border-b border-gray-100 hover:text-orange-300 hover:cursor-pointer"
+            onClick={() => {
+              scrollToSection("hero");
+              handleNav();
+            }}
+          >
             Home
           </li>
-          <li className="p-4 border-b border-gray-100 hover:text-orange-300 hover:cursor-pointer" onClick={() => { scrollToSection("about"); handleNav(); }}>
+          <li
+            className="p-4 border-b border-gray-100 hover:text-orange-300 hover:cursor-pointer"
+            onClick={() => {
+              scrollToSection("about");
+              handleNav();
+            }}
+          >
             About
           </li>
-          <li className="p-4 border-b border-gray-100 hover:text-orange-300 hover:cursor-pointer" onClick={() => { scrollToSection("groups"); handleNav(); }}>
+          <li
+            className="p-4 border-b border-gray-100 hover:text-orange-300 hover:cursor-pointer"
+            onClick={() => {
+              scrollToSection("groups");
+              handleNav();
+            }}
+          >
             Teams
           </li>
-          <li className="p-4 border-b border-gray-100 hover:text-orange-300 hover:cursor-pointer" onClick={() => { scrollToSection("teams"); handleNav(); }}>
+          <li
+            className="p-4 border-b border-gray-100 hover:text-orange-300 hover:cursor-pointer"
+            onClick={() => {
+              scrollToSection("teams");
+              handleNav();
+            }}
+          >
             Groups
           </li>
-          <li className="p-4 border-b border-gray-100 hover:text-orange-300 hover:cursor-pointer" onClick={() => { scrollToSection("footer"); handleNav(); }}>
+          <li
+            className="p-4 border-b border-gray-100 hover:text-orange-300 hover:cursor-pointer"
+            onClick={() => {
+              scrollToSection("footer");
+              handleNav();
+            }}
+          >
             Contact
           </li>
         </ul>
