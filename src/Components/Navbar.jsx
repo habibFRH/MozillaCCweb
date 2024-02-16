@@ -51,7 +51,7 @@ const Navbar = ({ light, theme }) => {
           }`}
           onClick={() => scrollToSection("groups")}
         >
-          Groups
+          Teams
         </li>
         <li
           className={`p-4 hover:text-[#fcbf49] hover:cursor-pointer ${
@@ -59,7 +59,7 @@ const Navbar = ({ light, theme }) => {
           }`}
           onClick={() => scrollToSection("teams")}
         >
-          Teams
+          Groups
         </li>
         <li
           className={`p-4 hover:text-[#fcbf49] hover:cursor-pointer ${
@@ -113,13 +113,13 @@ const Navbar = ({ light, theme }) => {
             About
           </li>
           <li className="p-4 border-b border-gray-100 hover:text-orange-300 hover:cursor-pointer" onClick={() => { scrollToSection("groups"); handleNav(); }}>
-            groups
+            Teams
           </li>
           <li className="p-4 border-b border-gray-100 hover:text-orange-300 hover:cursor-pointer" onClick={() => { scrollToSection("teams"); handleNav(); }}>
-            teams
+            Groups
           </li>
           <li className="p-4 border-b border-gray-100 hover:text-orange-300 hover:cursor-pointer" onClick={() => { scrollToSection("footer"); handleNav(); }}>
-            contact
+            Contact
           </li>
         </ul>
       </div>
