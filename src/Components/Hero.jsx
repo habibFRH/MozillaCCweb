@@ -46,7 +46,7 @@ const Hero = ({ light }) => {
         <p
           className={`md:text-xl font-bold ${
             light ? "text-[white]" : "text-[#6c757d]"
-          } sm:py-6 sm:px-6 py-9`}
+          } sm:py-6 sm:px-6 py-9 px-6`}
         >
           Embark on a journey of limitless possibilities with the Mozilla Campus
           Club, where computer science enthusiasts unite to explore, create, and
