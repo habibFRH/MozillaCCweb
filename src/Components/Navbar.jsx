@@ -21,7 +21,11 @@ const Navbar = ({ light, theme }) => {
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
       {/* desktop */}
       <div className="flex items-center">
-        <img src={Logo} className="h-14 px-3 cursor-pointer" alt="Mozilla Logo" />
+        <img
+          src={Logo}
+          className="h-14 px-3 cursor-pointer"
+          alt="Mozilla Logo"
+        />
         <img
           src={Palestine}
           className="h-10 cursor-pointer"
@@ -93,7 +97,7 @@ const Navbar = ({ light, theme }) => {
             <AiOutlineClose
               size={20}
               color={light ? "#000300" : "white"}
-              className="ease-in-out duration-1000"
+              className="fixed top-5 right-0 m-4 z-10"
             />
           ) : (
             <AiOutlineMenu
