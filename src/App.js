@@ -77,7 +77,7 @@ function App() {
           <Cards animation={"flip-left"} team={"Artificial Intelligence / ML"} img={AI} />
         </div>
       </div>
-      <DeviceType/>
+      <DeviceType light={light} />
       <Footer />
     </div>
   );
